@@ -27,25 +27,25 @@
     </header>
 
     <main>
-        <div class="background">
-            <div class="shape"></div>
-            <div class="shape"></div>
-        </div>
-        <form>
-            <h3>Login Here</h3>
+        <div class="formouter">
+            <div class="cirbox">
+                <div class="cir1 comon-cir"></div>
+                <div class="cir2 comon-cir"></div>
+            </div>    
     
-            <label for="username">Username</label>
-            <input type="text" placeholder="Email or Phone" id="username">
+            <div class="forminner">
+                <form>
+                    <h1>Login Form</h1>
+                    <label for="Username">Username</label><br>
+                    <input type="text" required name="Username" placeholder="Enter Your Username" maxlength="20"><br>
     
-            <label for="password">Password</label>
-            <input type="password" placeholder="Password" id="password">
+                    <label for="Password">Password</label><br>
+                    <input type="password" required name="Password" placeholder="Enter Your Password" minlength="8" pattern="a-z,A-Z,0-9,@"><br>
     
-            <button>Log In</button>
-            <div class="social">
-              <div class="go"><i class="fab fa-google"></i>  Google</div>
-              <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+                    <input type="submit" name="Submit" class="buttonsumit" >
+                </form>
             </div>
-        </form>
+        </div>
     </main>
 
     <footer>
